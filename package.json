@@ -1,0 +1,19 @@
+{
+  "name": "example-nodejs",
+  "version": "1.0.0",
+  "description": "Z-API - Integre seu sistema ao Whatsapp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm index.js"
+  },
+  "homepage": "https://github.com/Z-API/example-nodejs",
+  "author": "Z-API Team",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "esm": "^3.2.25",
+    "get-audio-duration": "^1.0.0",
+    "inquirer": "^7.0.4",
+    "ora": "^4.0.3"
+  }
+}
