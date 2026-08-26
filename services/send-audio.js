@@ -31,6 +31,7 @@ const sendAudio = async (instanceAPI, phone, fileURL) => {
     spinner.succeed('Audio enviada a fila de envios, deve chegar em breve.')
   } catch (e) {
     spinner.fail('Problemas ao enviar audio.')
+    console.error(e.response?.data || e.message)
   }
 }
 
