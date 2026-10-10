@@ -25,6 +25,7 @@ const sendVideo = async (instanceAPI, phone, fileURL) => {
     spinner.succeed('Video enviada a fila de envios, deve chegar em breve.')
   } catch (e) {
     spinner.fail('Problemas ao enviar video.')
+    console.error(e.response?.data || e.message)
   }
 }
 

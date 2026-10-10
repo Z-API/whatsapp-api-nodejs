@@ -20,6 +20,7 @@ const sendImage = async (instanceAPI, phone, fileURL) => {
     spinner.succeed('Imagem enviada a fila de envios, deve chegar em breve.')
   } catch (e) {
     spinner.fail('Problemas ao enviar imagem.')
+    console.error(e.response?.data || e.message)
   }
 }
 
